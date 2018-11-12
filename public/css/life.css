@@ -1,0 +1,9 @@
+.my_border{
+    border:1px solid lightpink;
+    background:white;
+    color:lightpink !important;
+}
+.my_hover:hover{
+    background:lightpink;
+    padding:2px;
+}

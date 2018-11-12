@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/index.css"/>
+    <link rel="stylesheet" href="css/base.css"/>
+    <script src="js/vue.js"></script>
+    <script src="js/axios.min.js"></script>
+    <script src="js/qs.min.js"></script>
+    <title></title>
+</head>
+<body class="body">
+    <header id="header" class="container my_header">
+        <!--<iframe src="header.html" frameborder="0" class="my_header"></iframe>-->
+    </header>
+    <div class="container" id="main">
+        <!--轮播图-->
+        <div class="carousel" data-ride="carousel"  id="sliderShow">
+                <ul class="carousel-indicators">
+                    <li data-target="#sliderShow" data-slide-to="0" class="active"></li>
+                    <li data-target="#sliderShow" data-slide-to="1"></li>
+                    <li data-target="#sliderShow" data-slide-to="2"></li>
+                    <li data-target="#sliderShow" data-slide-to="3"></li>
+                    <li data-target="#sliderShow" data-slide-to="4"></li>
+                </ul>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <a href="index.html">
+                            <img src="img/index/carousel/Cgbj0FtgARmARFjcAAHzVKRNmn8146.jpg" class="carousel-img">
+                        </a>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="index.html">
+                            <img src="img/index/carousel/Cgbj0FtpXX2AJqseAAaoNVAmd4E240.jpg" class="carousel-img">
+                        </a>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="index.html">
+                            <img src="img/index/carousel/Cgbj0Vtz2f-ATdukAAhxMFt_-NQ231.jpg" class="carousel-img">
+                        </a>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="index.html">
+                            <img src="img/index/carousel/Cgbj0VuGenGAUVI2AAUrOvFZAKI651.jpg" class="carousel-img">
+                        </a>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="index.html">
+                            <img src="img/index/carousel/Cgbj0FttW_KARzfYAAMsdTBzx9E623.jpg" class="carousel-img">
+                        </a>
+                    </div>
+                    <a href="#sliderShow" class="carousel-control-prev" data-slied="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a href="#sliderShow" class="carousel-control-next" data-siled="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
+                </div> 
+        </div>  
+        <!--首行-->
+        <div class="d-inline-flex justify-content-around mb-5 mt-5">
+                <a href="#">
+                    <img src="img/index/carousel/Cgbj0Ftr3BqARGG3AACpU-y_eIQ810.jpg" class="mr-2 w-100"/>
+                </a>
+                <a href="#">
+                    <img src="img/index/carousel/Cgbj0Vt_x6WAAcVeAACTtO195rc783.jpg" class="mr-2 w-100"/>
+                </a>
+                <a href="#">
+                    <img src="img/index/carousel/Cgbj0VttXaeAa0ErAABlL7h1yF4286.jpg" class="mr-2 w-100"/>
+                </a>
+                <a href="#">
+                    <img src="img/index/carousel/Cgbj0FtyNYOAA-1dAABP2-L-i14576.jpg" class="w-100"/>
+                </a>
+        </div>
+        <!--魅族手机-->
+        <h1 class="mb-4 mt-4 text-center ">魅族手机</h1>
+        <div class="row">
+           <div class="col-md-6">
+                    <div class="card color mr-1">
+                        <div class="text-center pb-4 mt-5 mb-2">
+                            <h2 v-text="res[0].title"></h2>
+                            <h4 v-text="res[0].details"></h4>
+                            <h5 class="cr mb-1" v-text="res[0].price | price"></h5>
+                        </div>
+                        <a :href="res[0].href"> 
+                            <img :src="res[0].pic" class="size"></a>
+                    </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card color h-100">
+                    <div class="text-center pb-5 mt-5 ">
+                        <h2 v-text="res[1].title"></h2>
+                        <h4 v-text="res[1].details"></h4>
+                        <h5 class="cr mb-1"  v-text="res[1].price | price"></h5>
+                    </div>
+                    <a :href="res[1].href">
+                        <img :src="res[1].pic" class="size" class="size">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-2">
+            <div v-for="p in res.slice(2,6)" class="col-md-3">
+                <div class="card color">
+                    <a :href="p.href"><img :src="p.pic" class="a_img"></a>
+                    <div class="text-center pb-4">
+                        <h6 v-text="p.title"></h6>
+                        <span class="my_size" v-text="p.details"></span>
+                        <h5 class="cr mb-1" v-text="p.price | price"></h5>
+                    </div>
+                </div>
+            </div>
+                <!--<div class="col-md-3">
+                    <div class="card color">
+                        <a href="phone_details.html?lid=5"><img src="img/index/pic/Cgbj0VsM-kuAGYZmAAm_NQr8nSk674.png" class="a_img"></a>
+                        <div class="text-center bg-white pb-4">
+                            <h6>魅蓝&nbsp;6T</h6>
+                            <span class="my_size">定制全屏 人机交互新体验</span>
+                            <h5 class="cr mb-1">￥799</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card color">
+                        <a href="phone_details.html?lid=3"><img src="img/index/pic/Cgbj0Vq9-oeARs_XAALvUdl5qpo302.png" class="a_img"></a>
+                        <div class="text-center pb-4">
+                            <h6>魅蓝&nbsp;E3</h6>
+                            <span class="my_size">玩的畅快 拍的清晰</span>
+                            <h5 class="cr mb-1">￥1799</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card color">
+                        <a href="phone_details.html?lid=6">
+                            <img src="img/index/pic/Cgbj0Fpe-_yAFtuLAAw27mVWra0383.png" class="a_img"></a>
+                        <div class="text-center pb-4">
+                            <h6>魅蓝&nbsp;S6</h6>
+                            <span class="my_size">领券立减50</span>
+                            <h5 class="cr mb-1">￥999</h5>
+                        </div>
+                    </div>
+                </div>-->
+        </div>
+        <!--魅族声学-->
+        <h1 class="mt-4 mb-4 text-center">魅族声学</h1>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="color">
+                    <a href="#"><img :src="res[12].pic" class="sx"></a>
+                </div>
+                <div class="color mt-2">
+                    <a href="#"><img :src="res[13].pic" class="sx"></a>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card color">
+                    <a :href="res[6].href"><img :src="res[6].pic" class="a_img"></a>
+                    <div class="text-center pb-4">
+                        <h6 v-text="res[6].title"></h6>
+                        <span class="my_size" v-text="res[6].details"></span>
+                        <h5 class="cr mb-1" v-text="res[6].price | price"></h5>
+                    </div>
+                </div>
+                <div class="card color mt-2">
+                    <a :href="res[7].href"><img :src="res[7].pic" class="a_img"></a>
+                    <div class="text-center pb-4">
+                        <h6 v-text="res[7].title"></h6>
+                        <span class="my_size" v-text="res[7].details"></span>
+                        <h5 class="cr mb-1" v-text="res[7].price | price"></h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card color">
+                    <a :href="res[8].href"><img :src="res[8].pic" class="a_img"></a>
+                    <div class="text-center pb-4">
+                        <h6 v-text="res[8].title"></h6>
+                        <span class="my_size" v-text="res[8].details"></span>
+                        <h5 class="cr mb-1" v-text="res[8].price | price"></h5>
+                    </div>
+                </div>
+                <div class="card color mt-2">
+                    <a :href="res[9].href"><img :src="res[9].pic" class="a_img"></a>
+                    <div class="text-center pb-4">
+                        <h6 v-text="res[9].title"></h6>
+                        <span class="my_size" v-text="res[9].details"></span>
+                        <h5 class="cr mb-1" v-text="res[9].price | price"></h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card color">
+                    <a :href="res[10].href"><img :src="res[10].pic" class="a_img"></a>
+                    <div class="text-center pb-4">
+                        <h6 v-text="res[10].title"></h6>
+                        <span class="my_size" v-text="res[10].details"></span>
+                        <h5 class="cr mb-1" v-text="res[10].price | price"></h5>
+                    </div>
+                </div>
+                <div class="card color mt-2">
+                    <a :href="res[11].href"><img :src="res[11].pic" class="a_img"></a>
+                    <div class="text-center pb-4">
+                        <h6 v-text="res[11].title"></h6>
+                        <span class="my_size" v-text="res[11].details"></span>
+                        <h5 class="cr mb-1" v-text="res[11].price | price"></h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--智能配件-->
+        <h1 class="mb-4 mt-4 text-center">智能配件</h1>
+        <div class="row" id="zn">
+            <div class="col-md-3">
+                <div class="color">
+                    <a :href="res[20].href"><img :src="res[20].pic" class="sx"></a>
+                </div>
+                <div class="color mt-2">
+                    <a :href="res[21].href"><img :src="res[21].pic" class="sx"></a>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card color">
+                    <a :href="res[14].href"><img :src="res[14].pic" class="a_img"></a>
+                    <div class="text-center pb-4">
+                        <h6 v-text="res[14].title"></h6>
+                        <span class="my_size" v-text="res[14].details"></span>
+                        <h5 class="cr" v-text="res[14].price | price"></h5>
+                    </div>
+                </div>
+                <div class="card color mt-2">
+                    <a :href="res[15].href"><img :src="res[15].pic" class="a_img"></a>
+                    <div class="text-center pb-4">
+                        <h6 v-text="res[15].title"></h6>
+                        <span class="my_size" v-text="res[15].details"></span>
+                        <h5 class="cr mb-1" v-text="res[15].price | price"></h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card color">
+                    <a :href="res[16].href"><img :src="res[16].pic" class="a_img"></a>
+                    <div class="text-center pb-4">
+                        <h6 v-text="res[16].title"></h6>
+                        <span class="my_size" v-text="res[16].details"></span>
+                        <h5 class="cr mb-1" v-text="res[16].price | price"></h5>
+                    </div>
+                </div>
+                <div class="card color mt-2">
+                    <a :href="res[17].href"><img :src="res[17].pic" class="a_img"></a>
+                    <div class="text-center pb-4">
+                        <h6 v-text="res[17].title"></h6>
+                        <span class="my_size" v-text="res[17].details"></span>
+                        <h5 class="cr mb-1" v-text="res[17].price | price"></h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card color">
+                    <a :href="res[18].href"><img :src="res[18].pic" class="a_img"></a>
+                    <div class="text-center pb-4">
+                        <h6 v-text="res[18].title"></h6>
+                        <span class="my_size" v-text="res[18].details"></span>
+                        <h5 class="cr mb-1" v-text="res[18].price | price"></h5>
+                    </div>
+                </div>
+                <div class="card color mt-2">
+                    <a :href="res[19].href"><img :src="res[19].pic" class="a_img"></a>
+                    <div class="text-center pb-4">
+                        <h6 v-text="res[19].title"></h6>
+                        <span class="my_size" v-text="res[19].details"></span>
+                        <h5 class="cr" v-text="res[19].price | price"></h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--生活周边-->
+        <h1 class="mb-4 mt-4 text-center">生活周边</h1>
+        <div class="row" id="live">
+            <div class="col-md-3">
+                <div class="color">
+                    <a href="#"><img :src="res[29].pic" class="sx"></a>
+                </div>
+                <div class="color mt-2">
+                    <a href="#"><img :src="res[28].pic" class="sx"></a>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card color">
+                    <a :href="res[22].href">
+                        <img :src="res[22].pic" class="a_img"></a>
+                    <div class="text-center pb-4">
+                        <h6 v-text="res[22].title"></h6>
+                        <span class="my_size" v-text="res[22].details"></span>
+                        <h5 class="cr mb-1" v-text="res[22].price | price"></h5>
+                    </div>
+                </div>
+                <div class="card color mt-2">
+                    <a :href="res[23].href">
+                        <img :src="res[23].pic" class="a_img"></a>
+                    <div class="text-center pb-4">
+                        <h6 v-text="res[23].title"></h6>
+                        <span class="my_size" v-text="res[23].details"></span>
+                        <h5 class="cr mb-1" v-text="res[23].price | price"></h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card color">
+                    <a :href="res[24].href">
+                        <img :src="res[24].pic" class="a_img"></a>
+                    <div class="text-center pb-4">
+                        <h6 v-text="res[24].title"></h6>
+                        <span class="my_size" v-text="res[24].details"></span>
+                        <h5 class="cr mb-1" v-text="res[24].price | price"></h5>
+                    </div>
+                </div>
+                <div class="card color mt-2">
+                    <a :href="res[25].href"><img :src="res[25].pic" class="a_img"></a>
+                    <div class="text-center pb-4">
+                        <h6 v-text="res[25].title"></h6>
+                        <span class="my_size" v-text="res[25].details"></span>
+                        <h5 class="cr mb-1" v-text="res[25].price | price"></h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card color">
+                    <a :href="res[26].href">
+                        <img :src="res[26].pic" class="a_img"></a>
+                    <div class="text-center pb-4">
+                        <h6 v-text="res[26].title"></h6>
+                        <span class="my_size" v-text="res[26].details"></span>
+                        <h5 class="cr mb-1" v-text="res[26].price | price"></h5>
+                    </div>
+                </div>
+                <div class="card color mt-2">
+                    <a :href="res[27].href">
+                        <img :src="res[27].pic" class="a_img"></a>
+                    <div class="text-center pb-4">
+                        <h6 v-text="res[27].title"></h6>
+                        <span class="my_size" v-text="res[27].details"></span>
+                        <h5 class="cr mb-1" v-text="res[27].price | price"></h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--社区热帖-->
+        <h1 class="mb-4 mt-4 text-center">社区热帖</h1>
+        <div class="row">
+                <div class="col-md-3">
+                    <div class="card color mt-2">
+                        <a href="#"><img src="img/index/pic/87f4d101-a0e4-43fb-9fc2-243af4e0a5b3.jpg" class="rt_img"></a>
+                        <div class="pb-2">
+                            <img src="img/index/pic/w100h100.jpg" class="rt mt-3 mb-2">
+                            <span>步惊云</span>
+                            <p>担心电池不够用？魅族16th与16thPlus续航实例对比告诉你</p>
+                            <span class="mt-5 text-secondary">魅族 16th Plus</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card color mt-2">
+                        <a href="#"><img src="img/index/pic/20a80a30-5352-47b6-bf5e-9d65ea77b1da.jpg" class="rt_img"></a>
+                        <div class="pb-2">
+                            <img src="img/index/pic/w100h1001.jpg" class="rt mt-3 mb-2">
+                            <span>安静</span>
+                            <p>静谧之形，澎湃之声，试听魅族Gravity 悬浮音响</p>
+                            <span class="mt-5 text-secondary">魅族 Gravity 悬浮音响</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card color mt-2">
+                        <a href="#"><img src="img/index/pic/4c463b91-e4fc-45db-89fa-77af9fd86e4f.jpg" class="rt_img"></a>
+                        <div class="pb-2">
+                            <img src="img/index/pic/w100h1002.jpg" class="rt mt-3 mb-2">
+                            <span>Aigjk</span>
+                            <p>真实的数据不会说谎，温柔的魅族16与她的狂暴性能</p>
+                            <span class="mt-5 text-secondary">魅族 16th 性能测试</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card color mt-2">
+                        <a href="#"><img src="img/index/pic/7c97ee6b-517d-431e-a69d-11d452bb6079.jpg" class="rt_img"></a>
+                        <div class="pb-2">
+                            <img src="img/index/pic/w100h1003.jpg" class="rt mt-3 mb-2">
+                            <span>benbenyuer</span>
+                            <p>脱下外壳依然可以秀肌肉，魅族16th强大到的不只是比表面</p>
+                            <span class="mt-5 text-secondary">魅族 16th 拆解</span>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <!--精彩视频-->
+        <h1 class="mb-4 mt-4 text-center">精彩视频</h1>
+        <div class="d-flex row">
+            <div class="col-md-3">
+                    <video src="img/video/x.mp4" poster="img/index/pic/f4c1b537-e855-4af8-8345-2d2e54cf693a.jpg" width="260px" height="200px" controls></video>
+            </div>
+            <div class="col-md-3">
+                    <video src="img/video/x.mp4" poster="img/index/pic/20a80a30-5352-47b6-bf5e-9d65ea77b1da.jpg" width="260px" height="200px" controls></video>
+            </div>
+            <div class="col-md-3">
+                    <video src="img/video/x.mp4" poster="img/index/pic/f94146b7-4839-4e74-941c-11a8bc3a3509.jpg" width="260px" height="200px" controls></video>
+            </div>
+            <div class="col-md-3">
+                    <video src="img/video/x.mp4" poster="img/index/pic/fA8765GHI2ywsNOqjhgTUVBeYcM9CdXW.png" width="260px" height="200px" controls></video>
+            </div>
+        </div>
+    </div>
+        <div id="life">
+            <ul class="life_list">
+                <li class="life_item"><a href="javascript:;"><span class="lift_btn_txt">购物车</span></a></li>
+                <li class="life_item"><a href="javascript:;"><span class="lift_btn_txt">APP</span></a></li>
+                    <li class="life_item"><a href="#"><span class="lift_btn_txt">顶部</span></a></li>
+            </ul>
+        </div>
+    
+    <footer class="foot_h" id="footer">
+        <!--<iframe src="footer.html" frameborder="0" class="my_footer mt-4"></iframe>-->
+    </footer>
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/footer.js"></script>
+</body>
+</html>

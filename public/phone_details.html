@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/phone_details.css">
+    <title>魅族手机-魅族商城</title>
+    <script src="js/vue.js"></script>
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/axios.min.js"></script>
+</head>
+<body class="body">
+    <header id="header" class="container my_header">
+    </header>
+    <div class="row color p_details">
+        <div class="col-md-6"  id="div-img">
+            <div class="card border-0">
+                <img src="" class="phone">
+                <div class="d-inline-block pt-2 mx-0 m-auto card-body">
+                    <ul>
+                        <!--<li class="float-left">
+                        <img :src=""  data-md="" data-lg=""> 
+                        </li>
+                        <li class="float-left">
+                            <img :src="res[1].pic" data-md="" data-lg="res[1].pic"> 
+                        </li>
+                        <li class="float-left">
+                            <img :src="res[1].pic" data-md="" data-lg="res[1].pic"> 
+                        </li>
+                        <li class="float-left">
+                            <img :src="res[1].pic" data-md="" data-lg="res[1].pic"> 
+                        </li>-->
+                    </ul>
+                </div> 
+               
+            </div>           
+        </div>
+        <div class="col-md-6 mt-5 w" id="details">
+            <h2>魅族15</h2>
+            <p class="text-secondary">魅族15系列最高降501，享魅族16系列优先购买权</p>
+            <div class="d-flex bg-light border-light pb-2">
+                <h4 class="mt-3 mb-3">￥<h1 class="text-danger">1998.00</h1></h4>
+            </div>
+            <div class="bg-light pb-2">
+                <span class="text-danger">加价购</span>
+                <span>另外加25元,即可换购超值商品</span>
+                <span>立即加购</span>
+            </div>
+            <span class="font mr-5 mt-3">支持</span><span class="mt-3 font"> ☑ 花呗分期 ☑ 白城速达 ☑ 顺丰发货 ☑ 7天无理由退货</span>
+            <div>
+                <span class="mt-3 font mr-3">配送服务</span>
+                <select name="provs" class="mt-5 mb-5">
+                    <option class="border-0">—请选择—</option>
+                    <option class="border-0">广东省</option>
+                    <option class="border-0">陕西省</option>
+                    <option class="border-0">北京</option>
+                    <option class="border-0">天津</option>
+                    <option class="border-0">河北省</option>
+                </select>
+                <select name="cities" class="hide"></select>
+                <span class="font">24:00前下单并支付,预计后天送达,本商品由魅族负责发货并提供售后服务</span>
+                <span>在线客服<img src="img/login/talk.png" class="h ml-2"></span>
+            </div>
+            <script>
+                    var cities=[
+                    [{"name":'广东市',"value":101},
+                    {"name":'广东市',"value":102},
+                    {"name":'广东市',"value":103}],
+                    [{"name":'西安市',"value":201},
+                    {"name":'西安市',"value":202},
+                    {"name":'西安市',"value":203}],
+                    [{"name":'东城区',"value":301},
+                    {"name":'西城区',"value":302},
+                    {"name":'海淀区',"value":303}],
+                    [{"name":'河东区',"value":401},
+                    {"name":'河西区',"value":402},
+                    {"name":'南开区',"value":403}],
+                    [{"name":'石家庄市',"value":501},
+                    {"name":'廊坊市',"value":502},
+                    {"name":'保定市',"value":503}]
+                ];
+                var selProvs=document.querySelector("[name=provs]");
+                var selCts=document.querySelector("[name=cities]");
+                
+                selProvs.onchange=function(){
+                    var i=this.selectedIndex-1;
+                    if(i<0) selCts.className="hide";
+                    else{
+                    var cts=cities[i];
+                    selCts.innerHTML="";
+                    var frag=document.createDocumentFragment();
+                    frag.appendChild(new Option("-请选择-"));
+                    for(var c of cts){
+                        frag.appendChild(new Option(c.name,c.value));
+                    }
+                    selCts.appendChild(frag);
+                    selCts.className="";
+                    }
+                    
+                }
+                selCts.onchange=function(){
+                    var selCts=this;
+                    
+                }
+            </script>
+            <hr>
+            <div class="row mt-3">
+                <div class="col-2 ul">
+                    <ul class="list-unstyled font">
+                        <li class="mt-5 mb-5">型号</li>
+                        <li class="mt-5 mb-5">网络类型</li>
+                        <li class="mt-5 mb-5">颜色分类</li>
+                        <li class="mt-5 mb-5">内存容量</li>
+                        <li class="mt-5 mb-5">选择套餐</li>
+                        <li class="mt-5 mb-5">花呗分期</li>
+                        <li class="mt-5 mb-5">数量</li>
+                    </ul>
+                </div>
+                <div class="col-3 p-0 m-0 ">
+                    <p class="xh text-center">魅族15</p>
+                    <p class="xh text-center">魅族16th</p>
+                    <p class="text-center xh">全网公开版</p>
+                    <p class="xh  text-center"><a href="phone_details.html?lid=1">
+                        <img src="img/product/xs/Cgbj0VrcbmKALZ1BAA0NVqTeXpU942.png80x80.png" class="size">雅金</a>
+                    </p>
+                    <p class="xh  text-center"><a href="phone_details.html?lid=2">
+                        <img src="img/product/xs/Cgbj0FrcbkeAW38NAAjvsXhhyFE066.png80x80.png" class="size">汝窑白</a>
+                    </p>
+                    <p class="xh text-center">4GB+64GB</p>
+                    <p class="xh text-center">官方标配</p>
+                    <p class="xh text-center">碎屏保套餐</p>
+                    <p class="xh text-center">￥681.31x3期</p>
+                    <div id="data" class="mt-5">
+                        <button>-</button>
+                        <span class="mr-2 ml-2">1</span>
+                        <button>+</button>
+                    </div>
+                </div>
+                
+                <script>
+                    var div=document.getElementById("data");
+                    var btns=div.getElementsByTagName("button");
+                    for(var btn of btns){
+                        btn.onclick=function(){
+                            var btn=this;
+                            var span=btn.parentNode.children[1];
+                            var n=parseInt(span.innerHTML);
+                            if(btn==span.nextElementSibling)
+                                n++;
+                            else if(n>1)
+                                n--;
+                            span.innerHTML=n;
+                        }
+                    }
+                </script>
+                <div class="col-3 m-0 p-0">
+                    <p class="xh text-center">魅族M15</p>
+                    <p class="xh text-center">魅族16th Plus</p>
+                    <p class="tran"></p>
+                    <p class="xh  text-center"><img src="img/product/xs/Cgbj0FrcblSAGHrPAAvT_qZZSA0427.png80x80.png" class="size">砚磨</p>
+                    <p class="tran"></p>
+                    <p class="xh text-center">4GB+128GB</p>
+                    <p class="xh text-center">延保6个月</p>
+                    <p class="tran"></p>
+                    <p class="xh text-center">￥347.98x6期</p>
+                </div>
+                <div class="col-3 m-0 p-0">
+                    <p class="xh text-center">魅族15Plus</p>
+                    <p class="tran"></p>
+                    <p class="tran"></p>
+                    <p class="xh  text-center"><img src="img/product/xs/Cgbj0FrcbnGANGRlAAzqchlSKjQ833.png80x80.png" class="size">黛蓝</p>
+                    <p class="tran"></p>
+                    <p class="tran"></p>
+                    <p class="xh text-center">延保12个月</p>
+                    <p class="tran"></p>
+                    <p class="xh text-center">￥178.98x12期</p>
+                </div>
+                <div class="d-flex input_p">
+                    <input type="button" value="立即购买" class="buy-cart">
+                    <input type="button" value="加入购物车" class="add-cart">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="my-tabs">
+        <ul class="tabs d-flex">
+            <li class="active"><a href="#content" data-toggle="tab" >商品详情</a></li>
+            <li><a href="#content-spec" data-toggle="tab">规格参数</a></li>
+        </ul>
+        <div id="container">
+            <div id="content" class="active ">
+                <h4  class="ml-5 mr-5">商品详情</h4><br>
+                <img src="img/product/lg/Cgbj0FubgnyAdx21AARYz6_r2lo559.jpg" alt="">
+                <img src="img/product/lg/Cgbj0FuHnLeAYlIIAAJH7LnSdq8072.jpg" alt="">
+                <img src="img/product/lg/Cgbj0FtiwleAX87SAAFTw4EzSQY926.jpg" alt="">
+                <img src="img/product/lg/Cgbj0VtoETeAJaxFAAHa6Xz78O8341.jpg" alt="">
+                <h2 class="pt-4 pb-4 bg-light mb-0">为您推荐</h2>
+               <div class="row w">
+                    <div class="col-md">
+                        <div class="card ca">
+                            <a href="#"><img src="img/product/lg/untitled5.png" class="w-75 ml-4"></a>
+                            <div class="text-md-center pb-3">
+                                <h6>POP 真无线蓝牙耳机</h6>
+                                <span class="my_size">六期免息 双无线 零设限</span>
+                                <h5 class="cr mb-1">￥499</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="card ca">
+                            <a href="#"><img src="img/product/lg/untitled6.png" class="w-75 ml-4"></a>
+                            <div class="text-center pb-3">
+                                <h6>魅族 HALO 激光蓝牙耳机</h6>
+                                <span class="my_size">12期免息 每天也就两块七</span>
+                                <h5 class="cr mb-1">￥999</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="card ca">
+                            <a href="#"><img src="img/product/lg/untitled.png" class="w-75 ml-4"></a>
+                            <div class="text-center pb-3">
+                                <h6>黑爵机械战狼键鼠套装</h6>
+                                <span class="my_size">金属面板 机械手感</span>
+                                <h5 class="cr mb-1">￥99</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="card ca">
+                            <a href="#"><img src="img/product/lg/untitled2.png" class="w-75 ml-4"></a>
+                            <div class="text-center pb-3">
+                                <h6>先锋头戴式蓝牙耳机</h6>
+                                <span class="my_size">3期免息 24小时心率监测</span>
+                                <h5 class="cr mb-1">￥499</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="card ca">
+                            <a href="#"><img src="img/product/lg/untitled1.png" class="w-75 ml-4"></a>
+                            <div class="text-center pb-4">
+                                <h6>乐心心率手环</h6>
+                                <span class="my_size">智能时代 一触即连</span>
+                                <h5 class="cr mb-1">￥129</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="content-spec">
+                <h4  class="ml-5 mr-5">规格参数</h4><br>
+                <h5   class="ml-5 mr-5">外观</h5>
+                <img src="img/product/lg/phone_s_4_87dd25e.jpg" class="ml-5 mr-5">
+                <img src="img/product/lg/phone_l_3_3708ef1.jpg" class="ml-5">
+                <hr>
+                <div class="d-flex">
+                    <h5   class="ml-5 mr-5">价格</h5>
+                    <ul class="list-unstyled">
+                        <li class="ml-5 mr-5">标准版64GB   ￥2499</li>
+                        <li class="ml-5">高配版128GB  ￥2799</li>
+                    </ul>
+                    <ul class="list-unstyled">
+                        <li class="ml-5 mr-5">标准版64GB   ￥2999</li>
+                        <li class="ml-5">高配版128GB  ￥3299</li>
+                    </ul>
+                </div>
+                <hr>
+                <div class="d-flex">
+                    <h5  class="ml-5 mr-5">硬件参数</h5>
+                    <ul class="list-unstyled"  class="ml-5 mr-5">
+                        <li  class="ml-5 mr-5">CPU 型号 高通骁龙 660</li>
+                        <li  class="ml-5 mr-5">CPU 频率2.2 GHz</li>
+                        <li  class="ml-5 mr-5">核心数8核</li>
+                        <li  class="ml-5 mr-5">GPU型号Adreno 512</li>
+                        <li  class="ml-5 mr-5">RAM容量4GB</li>
+                        <li  class="ml-5 mr-5">ROM容量64GB</li>
+                        <li  class="ml-5 mr-5">ROM容量128GB</li>
+                    </ul>
+                    <ul class="list-unstyled" class="ml-5">
+                        <li  class="ml-5 mr-5">CPU 型号 三星Exynos 8895</li>
+                        <li  class="ml-5 mr-5">CPU 频率2.3 GHz</li>
+                        <li  class="ml-5 mr-5">核心数8核</li>
+                        <li  class="ml-5 mr-5">GPU型号Mail-G71</li>
+                        <li  class="ml-5 mr-5">RAM容量6GB</li>
+                        <li  class="ml-5 mr-5">ROM容量64GB</li>
+                        <li  class="ml-5 mr-5">ROM容量128GB</li>
+                    </ul>
+                </div>
+                <hr>
+                <div class="d-flex">
+                    <h5  class="ml-5 mr-5">基本信息</h5>
+                    <ul class="list-unstyled" class="ml-5 mr-5">
+                        <li  class="ml-5 mr-5">高度约143mm</li>
+                        <li  class="ml-5 mr-5">厚度约72mm</li>
+                        <li  class="ml-5 mr-5">宽度约7.25mm</li>
+                        <li  class="ml-5 mr-5">重量约152g</li>
+                        <li  class="ml-5 mr-5">电池3000mAh</li>
+                        <li  class="ml-5 mr-5">快充mCharge4.0</li>
+                    </ul>
+                    <ul class="list-unstyled" class="ml-5">
+                        <li  class="ml-5 mr-5">高度约153.8mm</li>
+                        <li  class="ml-5 mr-5">厚度约78.25mm</li>
+                        <li  class="ml-5 mr-5">宽度约7.25mm</li>
+                        <li  class="ml-5 mr-5">重量约177g</li>
+                        <li  class="ml-5 mr-5">电池3500mAh</li>
+                        <li  class="ml-5 mr-5">快充mCharge4.0</li>
+                    </ul>
+                </div>
+                <hr>
+                <div>
+                    <h5   class="ml-5 mr-5">摄像头</h5>
+                    <h6  class="ml-5 mr-5">后置摄像头</h6>
+                    <ul class="list-unstyled">
+                        <li  class="ml-5 mr-5">高度约153.8mm</li>
+                        <li  class="ml-5 mr-5">厚度约78.25mm</li>
+                        <li  class="ml-5 mr-5">宽度约7.25mm</li>
+                        <li  class="ml-5 mr-5">重量约177g</li>
+                        <li  class="ml-5 mr-5">电池3500mAh</li>
+                        <li  class="ml-5 mr-5">快充mCharge4.0</li>
+                    </ul>
+                    <h6  class="ml-5 mr-5">前置摄像头</h6>
+                    <ul class="list-unstyled">
+                        <li  class="ml-5 mr-5">高度约153.8mm</li>
+                        <li  class="ml-5 mr-5">厚度约78.25mm</li>
+                        <li  class="ml-5 mr-5">宽度约7.25mm</li>
+                        <li  class="ml-5 mr-5">重量约177g</li>
+                        <li  class="ml-5 mr-5">电池3500mAh</li>
+                        <li  class="ml-5 mr-5">快充mCharge4.0</li>
+                    </ul>
+                </div>
+                <hr>
+                <div>
+                    <h6  class="ml-5 mr-5">多媒体</h6>
+                    <ul class="list-unstyled">
+                        <li  class="ml-5 mr-5">支持TS,AVI,FLV,MP4,3GP视频格式</li>
+                        <li  class="ml-5 mr-5">支持FLAC,APE,AAC,OGG音频格式</li>
+                        <li  class="ml-5 mr-5">支持JPEG,PNG,GIF,BMP图片格式</li>
+                    </ul>
+                </div>
+                <hr>
+                <div>
+                    <h6  class="ml-5 mr-5">注:</h6>
+                    <ol>
+                        <li  class="ml-5 mr-5">机身实际尺寸以及重量，会因为装配公差和配置不同而存在略微差异。</li>
+                        <li  class="ml-5 mr-5">以上数据有实验室极端环境测试所得，请尽量避免使用。</li>
+                        <li  class="ml-5 mr-5">本产品相关专利技术已获得授权。</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+        <script src="js/jquery-1.11.3.js"></script>
+        <script src="js/jquery-ui.js"></script>
+        <script>
+            $(".tabs:has([data-toggle=tab])").on("click","[data-toggle=tab]",e=>{
+                e.preventDefault();
+                var $tar=$(e.target);
+                if(!$tar.parent().is(".active")){
+                    $tar.parent().addClass("active").siblings().removeClass("active");
+                    var id=$tar.attr("href");
+                    $(id).addClass("active").siblings().removeClass("active");
+                }
+            })
+        </script>
+    </div>
+    <footer class="foot_h" id="footer">
+        <!--<iframe src="footer.html" frameborder="0" class="my_footer mt-5" ></iframe>-->
+    </footer> 
+    
+  <script src="js/bootstrap.js"></script>
+  <script src="js/ajax.js"></script>
+  <script src="js/details.js"></script>
+  <script src="js/header.js"></script>
+  <script src="js/footer.js"></script>
+</body>
+</html>

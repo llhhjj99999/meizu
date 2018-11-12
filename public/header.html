@@ -1,0 +1,48 @@
+  
+    <header id="header" class="my_header">
+       <div class="row bg-white">
+            <div class="col-md-2">
+                <a href="#"><img src="img/login/untitled.png" class="w-75 mt-4"/></a>
+            </div>
+            <div class="col-md-6">
+                <ul class="list-unstyled d-flex mt-4">
+                    <li><a href="index.html" class="ul my_ul">商城</a></li>
+                    <li><a href="product_phone.html" class="ul my_ul">手机</a></li>
+                    <li><a href="product_headset.html" class="ul my_ul">声学</a></li>
+                    <li><a href="product_zn.html" class="ul my_ul">智能</a></li>
+                    <li><a href="product_life.html" class="ul my_ul">生活</a></li>
+                    <li><a href="index.html" class="ul my_ul">Flyme</a></li>
+                    <li><a href="#" class="ul my_ul">服务</a></li>
+                    <li><a href="#" class="ul my_ul">专卖店</a></li>
+                    <li><a href="#" class="ul my_ul">社区</a></li>
+                    <li><a href="#" class="ul my_ul">APP下载</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4 d-flex p-0 dropdown mt-3">
+                    <div>
+                        <input @keyup.13="search_click()" v-model="keyword" type="text" placeholder="魅族" class="input"/>
+                        <img @click="search_click()" src="img/login/ico-seach.png" class="img">
+                    </div>
+                    <div data-toggle="islogin">
+                        <a href="login.html" class="deng islogin1">登录</a>
+                        <span class="deng"> | </span>
+                        <a href="register.html" class="deng">注册</a>
+                        <div class="dropdow-menu">
+                            <span class="my_size order">您还没有注册，请先去注册</span>
+                        </div>
+                    </div>
+                    <div data-toggle="loginout" class="loginout">
+                        <a href="javascript:(viod)" class="deng">欢迎 <span>tom</span></a>
+                        <a href="index.html" class="deng leave">注销</a>
+                       <!--<div>
+                            <img src="img/footer/untitled1.png" data-toggle="cart-img" class="cart-img1"/>
+                            <ul class="cart-img-menu">
+                                <li>您的购物车还没有商品，赶紧去选购吧！</li>
+                            </ul>
+                        </div>--> 
+                    </div>
+            </div>
+        </div>
+    </header>
+    
+       

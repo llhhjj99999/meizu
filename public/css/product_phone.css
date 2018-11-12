@@ -1,0 +1,23 @@
+.my_phone{
+    left:15px;
+}
+.d1{
+    margin-right:15px;
+    color:black;
+
+}
+.d1:hover{
+    color:#00C3F5;
+}
+.d2{
+    color:black;
+
+}
+.d2:hover{
+    color:#00C3F5;
+}
+
+.h{
+    height:200px;
+}
+

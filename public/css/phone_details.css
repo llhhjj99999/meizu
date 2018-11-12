@@ -1,0 +1,144 @@
+.xh{
+    border:1px solid lightgray;
+    width:150px;
+    height:40px;
+    margin-bottom: 0;
+    margin-top:17px;
+}
+
+.phone{
+    width:460PX;
+    height:500px;
+    margin-left:100px;
+}
+.input_p{
+    width:200px;
+    height:110px;
+}
+.font{
+    font-size:0.8rem;
+    color:#8c8c8c;
+    margin-left:50px;
+}
+.size{
+    width:20px;
+    height:20px;
+
+}
+.ul{
+    width:100px;
+}
+.img{
+    margin-left: 200px;
+}
+.tran{
+    border:1px solid transparent;
+    width:150px;
+    height:40px;
+    margin-bottom: 0;
+    margin-top:17px;
+}
+.h{
+    width:20px;
+    height:20px;
+}
+.w{
+    width:1260px;
+}
+/*放大镜样式*/
+.prev-img{
+    width:30px;
+    height:30px;
+}
+.next-img{
+    width:30px;
+    height:30px
+}
+#mask{
+    margin-left:200px;
+    width:460PX;
+    height:500px;
+    background-color:#ffa;
+    opacity:.5;
+}
+#preview>.card>.card-body>div{
+    width:248px;
+    overflow:hidden;
+  }
+  
+  #div-img>div>div>ul img:hover{
+    border:1px solid #e4393c;
+  }
+  
+  #mask{
+    width:176px; height:176px;
+    background-color:#ffa;
+    opacity:.5;
+  }
+  #super-mask{
+    width:352px; height:352px;
+  }
+  #div-lg{
+    width:400px; height:400px;
+    left:354px;
+    z-index:1000;
+    border: 1px solid rgba(0, 0, 0, 0.125)
+  }
+.p_details{
+    margin-top:80px;
+}
+/*标签样式*/
+.tabs+#container{position:relative;}
+
+.tabs li a{
+    font-size:20px;
+    color:black;
+    text-align:center;
+    line-height:60px;
+    margin-left:20px;
+    display:inline-block;
+}
+.tabs>li{
+    float:left;
+  }
+
+.tabs+#container>div{
+    position:absolute;
+    background-color:#fff;
+    
+}
+.tabs+#container>.active{
+    z-index:10;
+}
+#content-spec{
+    width:1241px;
+}
+#my-tabs{
+    width:1241px;
+    height:2700px; 
+    margin-top:30px;
+    
+}
+#container{
+    right:-35px;
+}
+.buy-cart{
+    background-color:#13a6eb;
+    margin-top:20px;
+    margin-bottom:20px;
+    text-align:center;
+    line-height:12px;
+    height:60px;
+    width:140px;
+}
+.add-cart{
+    background-color:#13a6eb;
+    height:60px;
+    text-align:center;
+    line-height:12.8px;
+    padding:0;
+    margin-top:20px;
+    margin-bottom:20px;
+    margin-left:20px;
+    width:140px;
+}

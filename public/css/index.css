@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding:0;
+}
+.slider{
+    width:600px;
+    height:300px;
+    margin:150px auto;
+    position:relative;
+}
+.sldier-out,.slider-item,.img{
+    width:100%;
+    height:100%;
+    position: absolute;
+}
+.slider-item{
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    transition: 2s;
+     width: 100px;
+}
+.img:nth-child(1){
+    background-image: url("img/index/carousel/Cgbj0FtgARmARFjcAAHzVKRNmn8146.jpg");
+    transform: rotateX(0deg) translateZ(150px);
+}
+.img:nth-child(2){
+    background-image: url("img/index/carousel/Cgbj0FtpXX2AJqseAAaoNVAmd4E240.jpg");
+    transform: rotateX(90deg) translateZ(150px);
+}
+.img:nth-child(3){
+    background-image: url("img/index/carousel/Cgbj0Vtz2f-ATdukAAhxMFt_-NQ231.jpg");
+    transform: rotateX(180deg) translateZ(150px);
+}
+.img:nth-child(4){
+    background-image: url("img/index/carousel/Cgbj0VuGenGAUVI2AAUrOvFZAKI651.jpg");
+    transform: rotateX(270deg) translateZ(150px);
+}
+.btn{
+    font-size: 32px;
+    color: #ffffff;
+    height: 50px;
+    width: 100%;
+    position: absolute;
+    top: calc(50% - 25px);
+}
+.prev,.next{
+    background: rgba(0,0,0,.3);
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    text-align: center;
+}
+.next{
+    right: 0;
+}
+
+
+
+#main{
+    position:relative;
+}
+.size{
+    width:75%;
+    border:0;
+    margin-left:70px;
+    padding:0;
+}
+.carousel{
+    height:480px;
+}
+.carousel-inner{
+    height:480px; 
+}
+.carousel-img{
+    width:100%;
+    height:480px;
+}
+.a_img{
+    width:75%;
+    margin-left:35px;
+}
+.sx{
+    width:262px;
+    height:302px;
+}
+.rt{
+    width:40px;
+    height:40px;
+    border-radius:50%;
+}
+.rt_img{
+    width:262px;
+    height:140px;
+}
+#life{
+    float:right;
+    
+}
+.life_item{
+    background:rgb(182, 171, 171);
+    height:60px;
+    margin-top:2px;
+}
+.lift_btn_txt{
+    padding:10px;
+    color:#fff;
+    text-align:center;
+    line-height: 20px;
+}

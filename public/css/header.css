@@ -1,0 +1,82 @@
+
+.my_ul:hover{
+    color:#00b4ff;
+}
+.ul{
+    color:black;
+    margin:0.7rem;
+}
+.input{
+   font-size:1rem;
+   margin-right:20px;
+   margin-left:20px;
+   border-radius:8px;
+   position:relative;
+   margin-top:11px;
+   border:1px solid #aaa;
+}
+.img{
+    width:20px;
+    height:20px;
+    position:absolute;
+    left:175px;
+    background-repeat:no-repeat;
+    margin-left:0;
+    top:18px;
+}
+.dropdown>div+div{
+   margin-left: 30px;
+   text-align:center;
+   height:30px;
+   margin-top:11px;
+}
+#header>div>div:nth-child(2)>ul{
+    margin-left:80px;
+}
+#header>div>div>a>img{
+    margin-left:80px;
+}
+.a{
+    width:75%;
+    height:44px;
+    margin-top:11px;
+    margin-right:6px;
+}
+
+.deng{
+    color:black;
+    margin-left:8px;
+    margin-top:11px;
+
+}
+.loginout{
+    justify-content:center;
+    width:250px;
+}
+.loginout>a>img{
+    width:30px;
+    height:30px;
+}
+.cart-img-menu{
+    width:150px;
+    height: 100px;
+    border:1px solid #fff;
+    background:#fff;
+    text-align:center;
+    line-height:2;
+    position:absolute;
+    font-size: 1rem;
+    color:rgba(170, 170, 170, 0.795);
+    z-index:10;
+    padding-left:0;
+    margin-bottom:0;
+    margin-top:25px;
+}
+.cart-img1{
+    margin-left:10px;
+    width:30px;
+    height:30px;
+}
+.sliderShow{
+    position:relative;
+}

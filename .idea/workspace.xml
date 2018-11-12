@@ -1,0 +1,487 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="68dffad7-0ab6-44d2-ae85-b0756999c80b" name="Default" comment="" />
+    <ignored path="meizu.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="903088213">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="24" />
+          <entry key="project.open.time.0" value="1" />
+          <entry key="project.open.time.10" value="3" />
+          <entry key="project.open.time.17" value="1" />
+          <entry key="project.open.time.2" value="3" />
+          <entry key="project.open.time.4" value="1" />
+          <entry key="project.open.time.6" value="2" />
+          <entry key="project.open.time.7" value="3" />
+          <entry key="project.open.time.8" value="5" />
+          <entry key="project.open.time.9" value="4" />
+          <entry key="project.opened" value="27" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="css" value="3464" />
+          <entry key="html" value="15986" />
+          <entry key="js" value="3" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="CSS" value="3464" />
+          <entry key="HTML" value="15986" />
+          <entry key="JavaScript" value="3" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="css" value="40" />
+          <entry key="html" value="51" />
+          <entry key="js" value="4" />
+          <entry key="png" value="1" />
+          <entry key="rnc" value="1" />
+          <entry key="ts" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CSS" value="40" />
+          <entry key="HTML" value="51" />
+          <entry key="Image" value="1" />
+          <entry key="JavaScript" value="4" />
+          <entry key="RNG Compact" value="1" />
+          <entry key="TypeScript" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.js.language.service.starts" />
+      <usages-collector id="statistics.vcs.git.usages" />
+    </session>
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="meizu" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/js/register.js">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/register.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1120">
+              <caret line="40" column="45" selection-start-line="40" selection-start-column="45" selection-end-line="40" selection-end-column="45" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/node_modules/debug/node.js">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/login.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="140">
+              <caret line="5" column="52" selection-start-line="5" selection-start-column="52" selection-end-line="5" selection-end-column="52" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/css/register.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="5180">
+              <caret line="185" column="20" selection-start-line="185" selection-start-column="20" selection-end-line="185" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Html5" />
+        <option value="JavaScript File" />
+        <option value="CSS File" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/muban.html" />
+        <option value="$PROJECT_DIR$/mei_product/footer.css" />
+        <option value="$PROJECT_DIR$/mei_product/footer.html" />
+        <option value="$PROJECT_DIR$/mei_product/header.html" />
+        <option value="$PROJECT_DIR$/css/product_headerset.css" />
+        <option value="$PROJECT_DIR$/product_headerset.html" />
+        <option value="$PROJECT_DIR$/css/product_zn.css" />
+        <option value="$PROJECT_DIR$/css/enter.css" />
+        <option value="$PROJECT_DIR$/enter.html" />
+        <option value="$PROJECT_DIR$/css/life.css" />
+        <option value="$PROJECT_DIR$/js/shopping.js" />
+        <option value="$PROJECT_DIR$/css/huan.css" />
+        <option value="$PROJECT_DIR$/css/footer.css" />
+        <option value="$PROJECT_DIR$/header.html" />
+        <option value="$PROJECT_DIR$/css/header.css" />
+        <option value="$PROJECT_DIR$/product_phone.html" />
+        <option value="$PROJECT_DIR$/css/product_phone.css" />
+        <option value="$PROJECT_DIR$/product_zn.html" />
+        <option value="$PROJECT_DIR$/css/product_headset.css" />
+        <option value="$PROJECT_DIR$/css/product_life.css" />
+        <option value="$PROJECT_DIR$/css/base.css" />
+        <option value="$PROJECT_DIR$/css/index.css" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/product_headset.html" />
+        <option value="$PROJECT_DIR$/product_life.html" />
+        <option value="$PROJECT_DIR$/css/phone_details.css" />
+        <option value="$PROJECT_DIR$/footer.html" />
+        <option value="$PROJECT_DIR$/huan_detail.html" />
+        <option value="$PROJECT_DIR$/phone_details.html" />
+        <option value="$PROJECT_DIR$/public/css/cart.css" />
+        <option value="$PROJECT_DIR$/public/cart.html" />
+        <option value="$PROJECT_DIR$/public/css/register.css" />
+        <option value="$PROJECT_DIR$/public/register.html" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths>
+      <path value="$PROJECT_DIR$/node_modules/body-parser/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/bytes/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/content-type/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/cookie-parser/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/cookie-signature/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/cookie/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/cors/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/debug/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/depd/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ee-first/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/express/node_modules/accepts/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/express/node_modules/array-flatten/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/express/node_modules/body-parser/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/express/node_modules/bytes/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/express/node_modules/content-disposition/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/express/node_modules/content-type/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/express/node_modules/cookie-signature/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/express/node_modules/cookie/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/express/node_modules/debug/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/express/node_modules/depd/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/express/node_modules/destroy/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/express/node_modules/ee-first/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/express/node_modules/encodeurl/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/express/node_modules/escape-html/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/express/node_modules/etag/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/express/node_modules/finalhandler/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/express/node_modules/forwarded/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/express/node_modules/fresh/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/express/node_modules/http-errors/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/express/node_modules/iconv-lite/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/express/node_modules/inherits/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/express/node_modules/ipaddr.js/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/express/node_modules/media-typer/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/express/node_modules/merge-descriptors/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/express/node_modules/methods/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/express/node_modules/mime-db/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/express/node_modules/mime-types/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/express/node_modules/mime/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/express/node_modules/ms/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/express/node_modules/negotiator/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/express/node_modules/on-finished/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/express/node_modules/parseurl/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/express/node_modules/path-to-regexp/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/express/node_modules/proxy-addr/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/express/node_modules/qs/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/express/node_modules/range-parser/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/express/node_modules/raw-body/node_modules/depd/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/express/node_modules/raw-body/node_modules/http-errors/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/express/node_modules/raw-body/node_modules/setprototypeof/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/express/node_modules/raw-body/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/express/node_modules/safe-buffer/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/express/node_modules/send/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/express/node_modules/serve-static/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/express/node_modules/setprototypeof/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/express/node_modules/statuses/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/express/node_modules/type-is/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/express/node_modules/unpipe/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/express/node_modules/utils-merge/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/express/node_modules/vary/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/express/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/http-errors/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/iconv-lite/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/inherits/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/media-typer/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/mime-db/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/mime-types/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ms/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/mysql/node_modules/core-util-is/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/mysql/node_modules/inherits/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/mysql/node_modules/isarray/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/mysql/node_modules/process-nextick-args/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/mysql/node_modules/readable-stream/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/mysql/node_modules/safe-buffer/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/mysql/node_modules/sqlstring/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/mysql/node_modules/string_decoder/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/mysql/node_modules/util-deprecate/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/mysql/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/object-assign/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/on-finished/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/qs/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/raw-body/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/safer-buffer/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/setprototypeof/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/statuses/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/type-is/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/unpipe/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/vary/package.json" />
+    </packageJsonPaths>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="x" value="5" />
+    <option name="y" value="207" />
+    <option name="width" value="1940" />
+    <option name="height" value="575" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane" />
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="FullScreen" value="false" />
+    <property name="HbShouldOpenHtmlAsHb" value="" />
+    <property name="JavaScriptLanguageLevel" value="ES6" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="recentsLimit" value="5" />
+    <property name="settings.editor.selected.configurable" value="File.Encoding" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\meizu\css" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\meizu\public\js" />
+      <recent name="E:\meizu\public\css" />
+      <recent name="E:\meizu" />
+      <recent name="F:\meizu\mei_product" />
+      <recent name="F:\meizu" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
+      <method />
+    </configuration>
+    <configuration default="true" type="JsTestDriver-test-runner" factoryName="JsTestDriver">
+      <setting name="configLocationType" value="CONFIG_FILE" />
+      <setting name="settingsFile" value="" />
+      <setting name="serverType" value="INTERNAL" />
+      <setting name="preferredDebugBrowser" value="Chrome" />
+      <method />
+    </configuration>
+    <configuration name="phone_details.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/meizu/phone_details.html">
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <pass-parent-envs>true</pass-parent-envs>
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="68dffad7-0ab6-44d2-ae85-b0756999c80b" name="Default" comment="" />
+      <created>1535432405571</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1535432405571</updated>
+      <workItem from="1535464043759" duration="5985000" />
+      <workItem from="1535548628060" duration="7803000" />
+      <workItem from="1535637887738" duration="5976000" />
+      <workItem from="1535713417337" duration="13429000" />
+      <workItem from="1535803212706" duration="8146000" />
+      <workItem from="1535853757523" duration="26080000" />
+      <workItem from="1535987876431" duration="1150000" />
+      <workItem from="1536070309074" duration="4815000" />
+      <workItem from="1536382129788" duration="10715000" />
+      <workItem from="1536408858115" duration="7417000" />
+      <workItem from="1536468471487" duration="17078000" />
+      <workItem from="1536674660132" duration="5739000" />
+      <workItem from="1536761613003" duration="2190000" />
+      <workItem from="1536847279445" duration="4740000" />
+      <workItem from="1537009546004" duration="9039000" />
+      <workItem from="1537062883974" duration="13964000" />
+      <workItem from="1537280829596" duration="2176000" />
+      <workItem from="1537360411081" duration="7955000" />
+      <workItem from="1537970766302" duration="1606000" />
+      <workItem from="1537972418512" duration="1778000" />
+      <workItem from="1538058938734" duration="1752000" />
+      <workItem from="1538406638087" duration="5000" />
+      <workItem from="1538885884375" duration="3000" />
+      <workItem from="1538885968259" duration="825000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="160366000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="4" y="166" width="1552" height="460" extended-state="1" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.093667544" />
+      <window_info id="Structure" order="1" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="0" />
+      <window_info anchor="bottom" id="Application Servers" order="1" />
+      <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="3" show_stripe_button="false" />
+      <window_info anchor="bottom" id="TODO" order="4" />
+      <window_info anchor="bottom" id="Debug" order="5" />
+      <window_info anchor="bottom" id="Run" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/webstorm.jar!/resources/html5-schema/html5/phrase.rnc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="63" column="14" selection-start-line="63" selection-start-column="14" selection-end-line="63" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/header.css" />
+    <entry file="file://$PROJECT_DIR$/css/footer.css" />
+    <entry file="file://$PROJECT_DIR$/css/product_phone.css" />
+    <entry file="file://$PROJECT_DIR$/css/product_headset.css" />
+    <entry file="file://$PROJECT_DIR$/css/index.css" />
+    <entry file="file://$PROJECT_DIR$/index.html" />
+    <entry file="file://$PROJECT_DIR$/product_headset.html" />
+    <entry file="file://$PROJECT_DIR$/css/bootstrap.css" />
+    <entry file="file://$PROJECT_DIR$/product_life.html" />
+    <entry file="file://$PROJECT_DIR$/product_phone.html" />
+    <entry file="file://$PROJECT_DIR$/index_product.html" />
+    <entry file="file://$PROJECT_DIR$/enter.html" />
+    <entry file="file://$PROJECT_DIR$/css/huan.css" />
+    <entry file="file://E:/xm/xz/public/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="92" column="20" selection-start-line="92" selection-start-column="20" selection-end-line="92" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/product_zn.html" />
+    <entry file="file://$PROJECT_DIR$/footer.html" />
+    <entry file="file://$PROJECT_DIR$/huan_detail.html" />
+    <entry file="file://$PROJECT_DIR$/header.html" />
+    <entry file="file://$PROJECT_DIR$/css/base.css" />
+    <entry file="file://E:/新建文件夹/新建文件夹 (2)/day02/js/3.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="5" column="28" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/新建文件夹/新建文件夹 (2)/day02/3_tabs.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/register.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/register.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1120">
+          <caret line="40" column="45" selection-start-line="40" selection-start-column="45" selection-end-line="40" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/debug/node.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/register.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5180">
+          <caret line="185" column="20" selection-start-line="185" selection-start-column="20" selection-end-line="185" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="5" column="52" selection-start-line="5" selection-start-column="52" selection-end-line="5" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
