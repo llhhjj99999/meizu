@@ -5,7 +5,6 @@ const pool=require("../pool");
 router.post("/login",(req,res)=>{
     var uname=req.body.uname;
     var upwd=req.body.upwd;
-    var uid=req.body.uid;
     if(uname==''){
         res.send({ok:-1,msg:"用户名不能为空"});
         return;
@@ -16,14 +15,14 @@ router.post("/login",(req,res)=>{
     }
     
     var sql="SELECT * FROM mei_user WHERE uname=? AND upwd=?";
-    pool.query(sql,[uname,upwd,uid],(err,result)=>{
+    pool.query(sql,[uname,upwd],(err,result)=>{
         if(err) throw err;
         console.log(result);
         res.writeHead(200,{
             "Content-Type":"application/json;charset=utf-8"
         })
         if(result.length>0){
-           req.session.uid=result.uid;
+           req.session.uid=result[0].uid;
            res.write(JSON.stringify({ok:1,msg:"登录成功"}));
         }else
            res.write(JSON.stringify({ok:0,msg:"用户名或密码不正确"}))
@@ -37,7 +36,7 @@ router.get("/islogin",(req,res)=>{
       pool.query(sql,[uid],(err,result)=>{
         if(err) throw err;
         console.log(result);
-         res.send({ok:1});   
+         res.send({ok:1,uname:result[0].uname});   
       });
 	}else{
 	  res.send({ok:0})

@@ -1,4 +1,4 @@
-SET NAMES UTF8;
+﻿SET NAMES UTF8;
 CREATE DATABASE mei CHARSET=UTF8;
 USE mei;
 #用户信息
@@ -427,7 +427,7 @@ INSERT INTO mei_product_pic VALUES
 /**购物车项表结构**/
 CREATE TABLE mei_shoppingcart_item(
   iid INT PRIMARY KEY AUTO_INCREMENT,
-  uid INT,      #用户编号
+  user_id INT,      #用户编号
   pid INT,      #商品编号
   fid INT,      #此订单项，所属的订单编号
   count INT,        #购买数量
@@ -455,7 +455,7 @@ CREATE TABLE mei_forder(
 #用户收货地址
 CREATE TABLE mei_receiver_address(
   aid INT PRIMARY KEY AUTO_INCREMENT,
-  uid INT,
+  user_id INT,
   receiver VARCHAR(8),
   province VARCHAR(16),
   city VARCHAR(16),

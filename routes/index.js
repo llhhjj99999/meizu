@@ -7,7 +7,11 @@ router.get("/",(req,res)=>{
   WHERE seq_recommended ORDER BY seq_recommended`;
   pool.query(sql,[],(err,result)=>{
     if(err) throw err;
-      res.send(result);
+    res.writeHead(200,{
+      "Content-Type":"application/json;charset=utf-8"
+      });
+    res.write(JSON.stringify(result))
+    res.end()
   })
 })
 router.get("/carousel",(req,res)=>{
